@@ -43,6 +43,8 @@ def make_qr_code_image(text, image_factory, qr_code_options=QRCodeOptions()):
     qr.add_data(force_str(text))
     if valid_version is None:
         qr.make(fit=True)
+
+    print(qr_code_options.fill_color)
     return qr.make_image(image_factory=image_factory, fill_color=qr_code_options.fill_color)
 
 
