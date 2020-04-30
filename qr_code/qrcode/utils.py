@@ -49,7 +49,8 @@ class QRCodeOptions:
         border=DEFAULT_BORDER_SIZE,
         version=DEFAULT_VERSION,
         image_format=DEFAULT_IMAGE_FORMAT,
-        error_correction=DEFAULT_ERROR_CORRECTION
+        error_correction=DEFAULT_ERROR_CORRECTION,
+        fill_color=DEFAULT_FILL_COLOR
     )
     _qr_code_options = dict(_DEFAULT_QR_CODE_OPTIONS)
 
@@ -92,6 +93,9 @@ class QRCodeOptions:
     def error_correction(self):
         return self._qr_code_options['error_correction']
 
+    @property
+    def fill_color(self):
+        return self._qr_code_options['fill_color']
 
 class ContactDetail:
     """
