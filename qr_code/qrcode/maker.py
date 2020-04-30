@@ -10,7 +10,7 @@ from django.utils.html import escape
 from django.utils.safestring import mark_safe
 
 from qr_code.qrcode.constants import SIZE_DICT, ERROR_CORRECTION_DICT, DEFAULT_ERROR_CORRECTION, DEFAULT_MODULE_SIZE, \
-    DEFAULT_CACHE_ENABLED, DEFAULT_URL_SIGNATURE_ENABLED
+    DEFAULT_CACHE_ENABLED, DEFAULT_URL_SIGNATURE_ENABLED, DEFAULT_FILL_COLOR
 from qr_code.qrcode.image import SvgPathImage, PilImageOrFallback, SVG_FORMAT_NAME, PNG_FORMAT_NAME
 from qr_code.qrcode.serve import make_qr_code_url
 from qr_code.qrcode.utils import QRCodeOptions
